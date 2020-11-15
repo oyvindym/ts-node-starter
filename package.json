@@ -1,0 +1,25 @@
+{
+  "name": "ts-node-template",
+  "version": "0.0.1",
+  "description": "Template for node + TS scripts",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev -r dotenv/config --transpileOnly ./src/index.ts",
+    "watch": "ts-node-dev -r dotenv/config --respawn --transpileOnly ./src/index.ts",
+    "tsc": "tsc",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@types/node": "14.14.7",
+    "@typescript-eslint/eslint-plugin": "4.7.0",
+    "@typescript-eslint/parser": "4.7.0",
+    "dotenv": "8.2.0",
+    "eslint": "7.13.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-deprecation": "1.1.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "prettier": "2.1.2",
+    "ts-node-dev": "1.0.0-pre.42",
+    "typescript": "4.0.5"
+  }
+}
